@@ -9,6 +9,11 @@ public class Calculator {
     }
 
     public int calculator(String postfix){}
-    public String postfix(String infix){}
+    public String postfix(String infix){
+    	boolean endON = false;
+        String postfix = new String();
+        Stack stack = new Stack();
+
+    }
     public int precedence(char c){}
 }
