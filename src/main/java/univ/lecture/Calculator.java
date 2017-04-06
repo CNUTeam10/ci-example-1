@@ -56,6 +56,9 @@ public class Calculator {
 	                }
 	                Object o = stack.pop(); // pop '(' and throw away
 	                break;
+	            case '+':
+	            case '-':
+	            case '*':
             }
     }
     public int precedence(char c){}
