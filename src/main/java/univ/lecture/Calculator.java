@@ -42,6 +42,20 @@ public class Calculator {
 	                }
 	                stack.push('(');
 	                break;
+	                
+	            case ')': 
+	            	// when ')' come out add ' ' and pop until '(' come out
+	                if (endON == true) {
+	                   postfix = postfix.concat(" ");
+	                   endON = false;
+	                }
+
+	                while (((Character) stack.peek()).charValue() != '(') {
+	                   postfix = postfix.concat(((Character) stack.pop()).toString());
+	                   postfix = postfix.concat(" "); // add ' ' when pop once
+	                }
+	                Object o = stack.pop(); // pop '(' and throw away
+	                break;
             }
     }
     public int precedence(char c){}
