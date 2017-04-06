@@ -9,6 +9,11 @@ public class Calculator {
     }
     
     public String postfix(Stirng infix) {
-    	
+    	boolean endON = false;
+        String postfix = new String();
+        Stack stack = new Stack();
+        for (int i = 0; i < infix.length(); i++) {
+        	
+        }
     }
 }
