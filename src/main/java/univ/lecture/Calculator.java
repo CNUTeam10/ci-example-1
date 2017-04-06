@@ -14,8 +14,11 @@ public class Calculator {
 	swith(c){
 		case '*' :
 		case '/' :
+			return 2;
 		case '+' :
 		case '-' ://kind of operator
+			return 1;
 		default:
+			return 0;
     }
 }
