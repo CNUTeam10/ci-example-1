@@ -10,5 +10,7 @@ public class Calculator {
 
     public int calculator(String postfix){}
     public String postfix(String infix){}
-    public int precedence(char c){}
+    public int precedence(char c){//return priority of operator
+
+    }
 }
