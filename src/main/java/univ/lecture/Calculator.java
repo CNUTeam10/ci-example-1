@@ -16,5 +16,6 @@ public class Calculator {
 		case '/' :
 		case '+' :
 		case '-' ://kind of operator
+		default:
     }
 }
