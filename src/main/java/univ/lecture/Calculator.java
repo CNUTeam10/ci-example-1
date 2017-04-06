@@ -59,7 +59,19 @@ public class Calculator {
 	            case '+':
 	            case '-':
 	            case '*':
+	            case '/':  
+	            if (endON == true) {
+	               postfix = postfix.concat(" ");
+	               endON = false;
+	            }
+	            while (!stack.isEmpty() && precedence(infix.charAt(i)) <= precedence(((Character) stack.peek()).charValue())) {
+	                 postfix = postfix.concat(((Character) stack.pop()).toString());
+	                 postfix = postfix.concat(" "); //add ' ' when pop
+	            }
+	            stack.push(infix.charAt(i)); // 
+	            break;
             }
+        }
     }
     public int precedence(char c){}
 }
