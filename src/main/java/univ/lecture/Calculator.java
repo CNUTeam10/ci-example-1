@@ -72,6 +72,13 @@ public class Calculator {
 	            break;
             }
         }
+        while (!stack.isEmpty()) 
+            postfix = postfix.concat(" " + ((Character) stack.pop()).toString());
+
+         System.out.println("ÈÄÀ§½Ä: " + postfix);
+
+         return postfix;
+
     }
     public int precedence(char c){}
 }
