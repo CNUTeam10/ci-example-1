@@ -33,6 +33,15 @@ public class Calculator {
 	                postfix = postfix.concat(infix.charAt(i) + "");
 	                endON = true;
 	                break;
+	                
+	            case '(':
+	            	//if '(' come out add ' ' and push to stack
+	                if (endON == true) {
+	                   postfix = postfix.concat(" ");
+	                   endON = false;
+	                }
+	                stack.push('(');
+	                break;
             }
     }
     public int precedence(char c){}
