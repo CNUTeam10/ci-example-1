@@ -59,8 +59,12 @@ public class Calculator {
 				stack.push(b / a);
 				break;
 
-
 			}
-			public String postfix(String infix){}
-			public int precedence(char c){}
 		}
+
+		return (double) stack.pop();
+
+	}
+	public String postfix(String infix){}
+	public int precedence(char c){}
+}
