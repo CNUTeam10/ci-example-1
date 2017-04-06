@@ -62,7 +62,7 @@ public class Calculator {
 			}
 		}
 
-		return (double) stack.pop();
+		return (int) stack.pop();
 
 	}
 	public String postfix(String infix){}
