@@ -7,4 +7,8 @@ public class Calculator {
     public int calculate(String exp) {
         return 2;
     }
+    
+    public String postfix(Stirng infix) {
+    	
+    }
 }
