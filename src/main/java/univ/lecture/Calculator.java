@@ -5,7 +5,7 @@ import java.util.Stack;
  */
 public class Calculator {
     public int calculate(String exp) {
-        return 2;
+        return calculator(exp);
     }
 
     public int calculator(String postfix){}
