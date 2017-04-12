@@ -76,6 +76,7 @@ public class Calculator {
 			  return 1;
 		  default:
 		  	return 0;
+          }
     }
  
     public String postfix(String infix){
